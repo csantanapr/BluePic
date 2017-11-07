@@ -60,13 +60,13 @@ function install() {
     -p targetNamespace $CURRENT_NAMESPACE
 
   echo "Creating actions"
-  wsk action create --kind swift:3 bluepic/weather actions/Weather.swift -t 300000
-  wsk action create --kind swift:3 bluepic/visualRecognition actions/VisualRecognition.swift -t 300000
-  wsk action create --kind swift:3 bluepic/cloudantRead actions/CloudantRead.swift -t 300000
-  wsk action create --kind swift:3 bluepic/cloudantWrite actions/CloudantWrite.swift -t 300000
-  wsk action create --kind swift:3 bluepic/kituraRequestAuth actions/KituraRequestAuth.swift -t 300000
-  wsk action create --kind swift:3 bluepic/kituraCallback actions/KituraCallback.swift -t 300000
-  wsk action create --kind swift:3 bluepic/processImage actions/Orchestrator.swift -t 300000
+  wsk action create --kind swift:3.1.1 bluepic/weather actions/Weather.swift -t 300000
+  wsk action create --kind swift:3.1.1 bluepic/visualRecognition actions/VisualRecognition.swift -t 300000
+  wsk action create --kind swift:3.1.1 bluepic/cloudantRead actions/CloudantRead.swift -t 300000
+  wsk action create --kind swift:3.1.1 bluepic/cloudantWrite actions/CloudantWrite.swift -t 300000
+  wsk action create --kind swift:3.1.1 bluepic/kituraRequestAuth actions/KituraRequestAuth.swift -t 300000
+  wsk action create --kind swift:3.1.1 bluepic/kituraCallback actions/KituraCallback.swift -t 300000
+  wsk action create --kind swift:3.1.1 bluepic/processImage actions/Orchestrator.swift -t 300000
   
   echo -e "${GREEN}Install Complete${NC}"
   wsk list
